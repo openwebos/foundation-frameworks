@@ -1,0 +1,12 @@
+{
+	"files":
+	{
+		"javascript":
+		[
+			"prologue.js",
+			"xmlsax.js",
+			"xml2json.js",
+			"json2xml.js"
+		]
+	}
+}

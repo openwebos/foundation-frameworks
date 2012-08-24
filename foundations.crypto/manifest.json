@@ -1,0 +1,12 @@
+{
+	"files":
+	{
+		"javascript":
+		[
+			"prologue.js",
+			"md5.js",
+			"sha1.js",
+			"oauth.js"
+		]
+	}
+}

@@ -1,0 +1,72 @@
+[
+	{
+	    "title": "Array Tests",
+	    "source": "test/arraytests.js",
+	    "testFunction": "ArrayTests"
+	},
+	{
+		"title": "Class Tests",
+		"source": "test/classtests.js",
+		"testFunction": "ClassTests"
+	},
+    {
+        "title": "Future Tests",
+        "source": "test/futuretests.js",
+        "testFunction": "FutureTests"
+	},
+	{
+        "title": "Future Tests 2",
+        "source": "test/futuretests2.js",
+        "testFunction": "FutureTests2"
+	},
+	{
+        "title": "AJAX tests",
+        "source": "test/ajaxtests.js",
+        "testFunction": "AjaxTests"
+	},
+    {
+        "title": "mapReduce Tests",
+        "source": "test/mapreducetests.js",
+        "testFunction": "MapReduceTests"
+    },
+    {
+        "title": "Require Tests",
+        "source": "test/asserttests.js",
+        "testFunction": "RequireTests"
+    },
+    {
+        "title": "Assert Tests",
+        "source": "test/asserttests.js",
+        "testFunction": "AssertTests"
+    },
+	{
+		"title": "Localization Tests",
+		"source": "test/localizationtests.js",
+		"testFunction": "LocTests"
+	},
+    {
+        "title": "String Tests",
+        "source": "test/stringtests.js",
+        "testFunction": "StringTests"
+    },
+    {
+        "title": "Object Tests",
+        "source": "test/objecttests.js",
+        "testFunction": "ObjectTests"
+    },
+    {
+        "title": "DB Tests",
+        "source": "test/dbtests.js",
+        "testFunction": "DBTests"
+    },
+    {
+        "title": "TempDB Tests",
+        "testFunction": "TempDBTests"
+    },
+    {
+        "title": "PalmCall Tests",
+        "source": "test/palmcall_tests.js",
+        "testFunction": "PalmCallTests"
+    }
+
+]

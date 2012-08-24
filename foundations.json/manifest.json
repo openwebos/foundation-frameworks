@@ -1,0 +1,12 @@
+{
+	"files":
+	{
+		"javascript":
+		[
+			"prologue.js",
+			"query.js",
+			"transformer.js",
+			"schema.js"
+		]
+	}
+}

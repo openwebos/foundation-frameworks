@@ -1,0 +1,167 @@
+// @@@LICENSE
+//
+//      Copyright (c) 2009-2012 Hewlett-Packard Development Company, L.P.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+// http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+//
+// LICENSE@@@
+
+// Native interface 
+
+// - file read/write etc
+
+Triton.IOChannel
+
+	channel([string path, string mode]|[int fd])
+	
+		void close()
+		void flush()
+		int getFlags()
+		string read(int len)
+		void readUsingBuffer(Triton.Buffer buffer)
+		void seek(int offset, int type)
+		void setFlags(int flags)
+		void write(string value)
+		void writeUsingBuffer(Triton.Buffer buffer)
+		void setOnRead(function dataAvailable)
+	
+	FLAG_APPEND
+	FLAG_NONBLOCK
+	FLAG_IS_READABLE
+	FLAG_IS_WRITABLE
+	FLAG_IS_SEEKABLE
+	FLAG_MASK
+	FLAG_GET_MASK
+	FLAG_SET_MASK
+	SEEK_CUR
+	SEEK_SET
+	SEEK_END
+
+// - file hierarchy traverse
+
+Triton.FTS(path, options)
+
+	close()
+	set(options)
+	read()
+	
+	FTS_COMFLOW
+	FTS_LOGICAL
+	FTS_NOCHDIR
+	FTS_NOSTAT
+	FTS_PHYSICAL
+	FTS_SEEDOT
+	FTS_XDEV
+	FTS_WHITEOUT
+	FTS_OPTIONMASK
+	FTS_NAMEONLY
+	FTS_STOP
+	FTS_ROOTPARENTLEVEL
+	FTS_ROOTLEVEL
+	FTS_D
+	FTS_DC
+	FTS_DEFAULT
+	FTS_DNR
+	FTS_DOT
+	FTS_DP
+	FTS_ERR
+	FTS_F
+	FTS_INIT
+	FTS_NS
+	FTS_NSOK
+	FTS_SL
+	FTS_SLNONE
+	FTS_W
+	FTS_DONTCHDIR
+	FTS_SYMFOLLOW
+	FTS_AGAIN
+	FTS_FOLLOW
+	FTS_NOINSTR
+	FTS_SKIP
+	
+// - Buffers
+
+Triton.Buffer(int initialSize)
+
+	void copyTo(Triton.Buffer buffer, int length)
+	read8Bits
+	readObject
+	int readByte()
+	long readLong()
+	ulong readULong()
+	double readDouble()
+	int readInt()
+	uint readUInt()
+	short readShort()
+	ushort readUShort()
+	string readString()
+	int length
+	Triton.Buffer shift(int amount)
+	void transform(int algorithm, bool reverse)
+	void setByteOrder(int order)
+	void write(string|int val)
+	void writeByte(int val)
+	void writeDouble(double val)
+	void writeInt(int val)
+	void writeUInt(uint val)
+	void writeShort(short val)
+	void writeLong(long val)
+	void writeULong(ulong val)
+	void writeString(string val)
+	int position
+	
+	SEEK_SET
+	SEEK_CUR
+	SEEK_END
+	ENDIAN_BIG
+	ENDIAN_LITTLE
+	
+Triton.Socket
+
+	socket(domain, type, protocol)
+	
+		{ socket, sockAddr } accept()
+		void bind(sockaddr addr)
+		void close()
+		void connect(sockaddr addr)
+		void listen(int qlen)
+		bool setBlocking
+		int getDescriptor()
+	
+	sockaddr(family, host, port)
+	
+		string host
+		int port
+	
+	getaddrinfo
+	
+	PF_UNIX
+	PF_INET
+	PF_INET6
+	SOCK_STREAM
+	SOCK_DGRAM
+	AF_UNSPEC
+	AF_UNIX
+	AF_INET
+	AF_INET6
+	AI_NUMERICHOST
+	AI_CANONNAME
+	AI_PASSIVE
+	AI_ADDCONFIG
+	AI_V4MAPPED
+	AI_ALL
+	AI_NUMERICSERV
+	AI_IDN
+	AI_CANONIDN
+	AI_IDN_ALLOW_UNASSIGNED
+	AI_IDN_USE_STD4_ASCII_RULES

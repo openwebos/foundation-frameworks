@@ -1,0 +1,29 @@
+{
+	"files":
+	{
+		"javascript":
+		[
+			"prologue.js",
+            "utils/environmentutils.js",
+			"structure/class.js",
+			"structure/err.js",
+            "utils/arrayutils.js",
+            "utils/stringutils.js",
+			"object/objectutils.js",
+			"model/model.js",
+			"control/future.js",
+			"control/fsm.js",
+			"control/mapreduce.js",
+			"control/queue.js",
+			"control/activity.js",
+			"data/db.js",
+			"data/typedowndb.js",
+			"comms/ajaxcall.js",
+			"comms/palmcall.js",
+			"comms/file.js",
+			"assert/assert.js",
+			"localization/localize.js"
+		]
+	},
+	"builtinReady": true
+}

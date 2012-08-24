@@ -1,0 +1,5 @@
+[{
+	"title": "xml2json Tests",
+	"source": "test/xml2jsontests.js",
+	"testFunction": "Xml2JsonTests"
+}]

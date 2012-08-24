@@ -1,0 +1,32 @@
+[
+	{
+		"title": "File Read Tests",
+		"source": "test/filetests.js",
+		"testFunction": "FileTests"
+	},
+	{
+		"title": "File Write Tests",
+		"source": "test/filewritetests.js",
+		"testFunction": "FileWriteTests"
+	},
+	{
+		"title": "Directory Tests",
+		"source": "test/dirtests.js",
+		"testFunction": "DirTests"
+	},
+	{
+		"title": "Network Tests",
+		"source": "test/nettests.js",
+		"testFunction": "NetTests"
+	},
+	{
+		"title": "Async I/O Tests",
+		"source": "test/posix_tests.js",
+		"testFunction": "PosixTests"
+	},
+	{
+		"title": "Chain Tests",
+		"source": "test/chain_tests.js",
+		"testFunction": "ChainTests"
+	}
+]

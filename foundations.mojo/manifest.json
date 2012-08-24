@@ -1,0 +1,13 @@
+{
+	"files":
+	{
+		"javascript":
+		[
+			"prologue.js",
+			"activity.js",
+			"events.js",
+			"scenes/autobinder.js",
+			"scenes/menus.js"
+		]
+	}
+}

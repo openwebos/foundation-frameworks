@@ -1,0 +1,34 @@
+{
+	"files":
+	{
+		"javascript":
+		[
+			"prologue.js",
+			"errors.js",
+			"buffer.js",
+			"seekorigin.js",
+			"stream.js",
+			"iochannelstream.js",
+			"filestream.js",
+			"networkstream.js",
+			"bufferedstream.js",
+			"memorystream.js",
+			"file.js",
+			"searchoptions.js",
+			"directory.js",
+			"socket.js",
+			"binaryreader.js",
+			"binarywriter.js",
+			"addressfamily.js",
+			"sockettype.js",
+			"protocoltype.js",
+			"ajaxstream.js",
+			"posix.js",
+			"chain_link.js",
+			"chain_buffer.js",
+			"chain_input.js",
+			"chain_output.js"
+			
+		]
+	}
+}

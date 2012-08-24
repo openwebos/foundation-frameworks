@@ -1,0 +1,7 @@
+[
+	{
+		"title": "mapReduce Tests",
+		"source": "test/mapreducetests.js",
+		"testFunction": "MapReduceTests"
+	}
+]
